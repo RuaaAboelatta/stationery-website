@@ -129,11 +129,11 @@ nav,footer{
     .form-inline button{
         margin: 10px;
     }
-    .card,.smedia2{
+    .card1,.card2,.smedia2{
         width: 75%;
     }
     .card3{
-        width: 85%;
+        width: 90%;
     }
     .card3,.column-con{
         flex-direction: column;
