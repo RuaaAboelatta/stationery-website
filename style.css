@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lora", serif;
+
+}
+nav,footer{
+    background-color: #4A3122;
+    color: white;
+}
+
+
+.navbar-brand{
+    font-family: "Libertinus Keyboard", system-ui;
+}
+.hov{
+    color: white;
+    transition: 0.5s;
+}
+.hov:hover{
+    color: #F9BD4F;
+    border: 1px solid #F9BD4F;
+    border-radius: 5px;
+}
+.navbar-brand{
+    border-right: 2px solid #3E2619;
+}
+.smedia{
+    position: absolute;
+    position: fixed;
+    z-index: 10;
+    font-size: 40px;
+    top: 20%;
+    right: 1.5%;
+}
+.smedia i{
+    margin: 20px 0px;
+}
+.smedia i:hover{
+    color: #c69742;
+}
+.title{
+    color: #6d3512;
+    /* font-family: "Story Script", sans-serif; */
+    /* color: white; */
+}
+
+.carousel img{
+    height: 90vh;
+    width: 100%;
+}
+.carousel-caption{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.custom-sec{
+    background-color: rgba(165, 150, 134, 0.33);
+}
+.card-img-top{
+    height: 350px;    
+}
+.bg{
+    height: 400px;
+    background-image: url(./img/bg5.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.card1{
+    position: relative;
+}
+.card1::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    /* opacity: 0; */
+    width: 0%;
+    height: 0%;
+}
+.card1:hover::after{
+    /* opacity: 1; */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+
+
+}
+.card-body{
+    z-index: 2;
+}
+.card2 img ,.card2,.card-img-overlay{
+    border-radius: 30px;
+    transition: 0.5s;
+}
+.card2:hover{
+    transform: scale(0.9,0.9);
+}
+.card-img-overlay{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.skl-img{
+    overflow: hidden;
+    clip-path: polygon(0% 0%, 90% 0%, 70% 100%, 0% 100%);
+}
+.skr-img{
+    overflow: hidden;
+    clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 30% 100%);
+}
+.skl-img img,.skr-img img{
+    transition: 0.5s;
+}
+.card3:hover img{
+    transform: scale(1.1,1.1);
+
+}
+.line1{
+    width: 10%;
+    height: 4px;
+    background-color: #F9BD4F;
+    border-radius: 4px;
+}
+.line2{
+    height: 2px;
+    background-color: #3E2619;
+}
+.modal-backdrop{
+    z-index: 0;
+}
+@media(max-width : 600px){
+    .card{
+        margin: auto;
+    }
+    .navbar-brand{
+        border: 0;
+    }
+    .form-inline button{
+        margin: 10px;
+    }
+   .card3{
+    flex-direction: column;
+    padding: 10px;
+   }
+   .skl-img,.skr-img{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    order: -1;
+
+   }
+   .container{
+    flex-wrap: wrap;
+   }
+   .bor-b{
+    border-bottom: 2px solid #3E2619;
+    margin-bottom: 10px;
+   }
+
+    
+}
