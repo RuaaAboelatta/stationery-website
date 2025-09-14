@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libertinus+Keyboard&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="pt-2 bg-light">
+    <header>
+      <nav class="navbar navbar-expand-sm fixed-top">
+        <img
+          src="img/colored-pencil.png"
+          alt=""
+          class="logo mr-3"
+          width="40px"
+        />
+        <a href="#" class="navbar-brand text-warning pr-2">Stationery</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#nav-coll"
+        >
+          <span class="navbar-toggler-icon">
+            <i class="fa-solid fa-bars text-light m-1"></i>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav-coll">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link hov">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link hov">Shop</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle hov"
+                id="navbardrop"
+                data-toggle="dropdown"
+                >Category</a
+              >
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">notebooks</a>
+                <a href="#" class="dropdown-item">pencils</a>
+                <a href="#" class="dropdown-item">colors</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link hov">Contact</a>
+            </li>
+          </ul>
+          <form action="#" class="form-inline ml-auto">
+            <input type="text" class="form-control mx-2" placeholder="search" />
+            <button class="btn btn-warning mx-2">search</button>
+            <button
+              class="btn btn-outline-warning mx-2"
+              data-toggle="modal"
+              data-target="#loginp"
+            >
+              login
+            </button>
+           
+          </form>
+
+        </div>
+      </nav>
+       <div class="modal fade" id="loginp">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title title">Login</h2>
+                    <button class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body text-dark">
+                    <form action="#">
+                      <div class="form-group">
+                        <label for="email">Email address :</label>
+                        <input
+                          type="email"
+                          id="email"
+                          class="form-control"
+
+                          placeholder="enter your email"
+                        />
+                      </div>
+                      <div class="form-group">
+                         <label for="password">Password:</label>
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="password"
+                          placeholder="enter your password"
+                        />
+                      </div>
+                     <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="rem">
+                                    <label for="rem" class="custom-control-label">Remember me</label>
+                                </div><!-- custom-control -->
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      class="btn btn-outline-warning"
+                      data-dismiss="modal"
+                    >
+                      login
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </header>
+
+    <main>
+      <div id="sec1" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#sec1" data-slide-to="0" class="active"></li>
+          <li data-target="#sec1" data-slide-to="1"></li>
+          <li data-target="#sec1" data-slide-to="2"></li>
+          <li data-target="#sec1" data-slide-to="3"></li>
+        </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/bg1.jpg" alt="" />
+            <div class="carousel-caption rounded-lg">
+              <h2>Best Stationery Ever</h2>
+              <p>
+                A big collection of various stationery items . Cute and
+                affordable just for you!
+              </p>
+              <button class="btn btn-outline-warning">shop</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/bg2.jpg" alt="" />
+            <div class="carousel-caption rounded-lg">
+              <h2>Best Stationery Ever</h2>
+              <p>
+                A big collection of various stationery items . Cute and
+                affordable just for you!
+              </p>
+              <button class="btn btn-outline-warning">shop</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/bg3.jpg" alt="" />
+            <div class="carousel-caption rounded-lg">
+              <h2>Best Stationery Ever</h2>
+              <p>
+                A big collection of various stationery items . Cute and
+                affordable just for you!
+              </p>
+              <button class="btn btn-outline-warning">shop</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/bg4.jpg" alt="" />
+            <div class="carousel-caption rounded-lg">
+              <h2>Best Stationery Ever</h2>
+              <p>
+                A big collection of various stationery items . Cute and
+                affordable just for you!
+              </p>
+              <button class="btn btn-outline-warning">shop</button>
+            </div>
+          </div>
+        </div>
+        <a href="#sec1" class="carousel-control-prev" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#sec1" class="carousel-control-next" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+      <div class="d-flex flex-column text-warning smedia">
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-square-twitter"></i>
+        <i class="fa-brands fa-square-whatsapp"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+
+      </div>
+    </main>
+
+    <section>
+      <div class="jumbotron bg-light shadow">
+        <h2 class="text-warning">Welcome</h2>
+        <p>
+          Stationery refers to the materials used for writing or typing, such as
+          paper, pens, and envelopes, often for formal correspondence or in an
+          office setting. In a broader sense, it includes various office and
+          school supplies used for organizing and creating documents.
+        </p>
+        <button class="btn btn-outline-warning">learn more</button>
+      </div>
+    </section>
+    <hr />
+
+    <section>
+      <div class="jumbotron bg-light shadow title py-4">
+        <h2 class="text-center">Our Categories</h2>
+      </div>
+      <div id="accordion">
+        <div class="card">
+          <div
+            class="card-header d-flex justify-content-between align-items-center"
+          >
+            <a
+              href="#acc1"
+              class="card-link text-warning"
+              data-toggle="collapse"
+              >Notebooks</a
+            >
+            <i class="fa-solid fa-angle-down text-warning"></i>
+          </div>
+          <div id="acc1" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              Capture your brightest ideas the moment they strike in a trusted
+              notebook, your dedicated space for organized thinking and
+              limitless creativity. A notebook is more than paper; it's the
+              foundation where plans are built, stories are born, and
+              productivity is mastered. Transform your chaotic thoughts into a
+              clear, actionable plan with the simple, reliable power of putting
+              pen to paper. Choose a notebook that reflects your style, becoming
+              a constant companion for your personal and professional journey.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div
+            class="card-header d-flex justify-content-between align-items-center"
+          >
+            <a
+              href="#acc2"
+              class="card-link text-warning"
+              data-toggle="collapse"
+              >Pencils</a
+            >
+            <i class="fa-solid fa-angle-down text-warning"></i>
+          </div>
+          <div id="acc2" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              Unleash your potential with the perfect tools: pencils designed
+              for effortless flow, superior control, and mistake-free
+              creativity. From sketching masterpieces to drafting precise plans,
+              our pencils provide the reliable, tactile experience that digital
+              simply can't match. Experience the satisfying glide of premium
+              graphite that sharpens to a perfect point, ready to bring your
+              sharpest ideas to life. They are the essential, versatile
+              instrument for thinkers, creators, and students who value
+              precision and the power of a good first draft.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div
+            class="card-header d-flex justify-content-between align-items-center"
+          >
+            <a
+              href="#acc3"
+              class="card-link text-warning"
+              data-toggle="collapse"
+              >Colors</a
+            >
+            <i class="fa-solid fa-angle-down text-warning"></i>
+          </div>
+          <div id="acc3" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              Breathe life into your world with a spectrum of vibrant colors
+              that inspire joy and unlock new dimensions of your creativity.
+              Don't just fill space—express emotion, highlight what's important,
+              and communicate ideas with energy and clarity that commands
+              attention. Whether for professional artistry or mindful
+              relaxation, coloring is your gateway to a more focused, joyful,
+              and expressive state of mind. Our colors are crafted for brilliant
+              saturation and smooth application, turning every project into a
+              masterpiece.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+    <section class="container-fluid custom-sec py-5">
+      <div class="jumbotron bg-light shadow title py-4">
+        <h2 class="text-center">Custom Your Order</h2>
+      </div>
+      <p class="px-4">
+        write your requirements then
+        <span class="text-warning font-weight-bold">send</span>
+      </p>
+      <div class="form-group px-4">
+        <label for="comment">requirements:</label>
+        <textarea
+          class="form-control"
+          rows="5"
+          id="comment"
+          placeholder="req"
+        ></textarea>
+      </div>
+      <button
+        class="btn btn-warning float-right mr-4"
+        data-toggle="modal"
+        data-target="#modal1"
+      >
+        send
+      </button>
+      <div class="modal fade" id="modal1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title title">Custom Order</h2>
+              <button class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              Your custom order was sent successfully!
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-outline-warning" data-dismiss="modal">
+                ok
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+    <section class="container-fluid custom-sec py-5">
+      <div class="jumbotron bg-light shadow title py-4">
+        <h2 class="text-center">Surprise Gift</h2>
+      </div>
+      <p class="px-4">
+        write the address and the gift then
+        <span class="text-warning font-weight-bold">send</span>
+      </p>
+      <div class="form-group px-4">
+        <label for="comment">gift idea:</label>
+        <textarea
+          class="form-control"
+          rows="5"
+          id="comment"
+          placeholder="idea"
+        ></textarea>
+      </div>
+      <button
+        class="btn btn-warning float-right mr-4"
+        data-toggle="modal"
+        data-target="#modal2"
+      >
+        send
+      </button>
+      <div class="modal fade" id="modal2">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title title">Surprise Gift</h2>
+              <button class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              Your surprise gift was sent successfully!
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-outline-warning" data-dismiss="modal">
+                ok
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+    <section class="container-fluid custom-sec py-5">
+      <div class="jumbotron bg-light shadow title py-4">
+        <h2 class="text-center">Customer Service</h2>
+      </div>
+      <p class="px-4">
+        write your problem then
+        <span class="text-warning font-weight-bold">send</span>
+      </p>
+      <div class="form-group px-4">
+        <label for="comment">complaint:</label>
+        <textarea
+          class="form-control"
+          rows="5"
+          id="comment"
+          placeholder="complaint"
+        ></textarea>
+      </div>
+      <button
+        class="btn btn-warning float-right mr-4"
+        data-toggle="modal"
+        data-target="#modal3"
+      >
+        send
+      </button>
+      <div class="modal fade" id="modal3">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title title">Customer Service</h2>
+              <button class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">Your complaint was sent successfully!</div>
+            <div class="modal-footer">
+              <button class="btn btn-outline-warning" data-dismiss="modal">
+                ok
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+    <section class="bg"></section>
+    <section></section>
+
+    <section class="my-5">
+      <div class="container">
+        <div class="jumbotron bg-light shadow text-center title py-2">
+          <h2>Best Sellers</h2>
+        </div>
+        <div class="d-flex justify-content-around flex-wrap m-auto">
+          <div class="card col-lg-3 col-sm-8 my-5 card1">
+            <img src="img/p1.jpg" alt="" class="card-img-top" />
+            <div class="card-body px-0 py-4">
+              <p class="d-inline font-weight-bold">flower boot</p>
+              <button
+                class="btn btn-outline-warning float-right mt-n2 px-3 py-1"
+              >
+                Shop
+              </button>
+              <p class="card-text mt-2">notebook with a pretty cover</p>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-sm-8 my-5 card1">
+            <img src="img/p2.jpg" alt="" class="card-img-top" />
+            <div class="card-body px-0 py-4">
+              <p class="d-inline font-weight-bold">blue flower</p>
+              <button
+                class="btn btn-outline-warning float-right mt-n2 px-3 py-1"
+              >
+                Shop
+              </button>
+              <p class="card-text mt-2">notebook with a pretty cover</p>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-sm-8 my-5 card1">
+            <img src="img/p3.jpg" alt="" class="card-img-top" />
+            <div class="card-body px-0 py-4">
+              <p class="d-inline font-weight-bold">flower boquet</p>
+              <button
+                class="btn btn-outline-warning float-right mt-n2 px-3 py-1"
+              >
+                Shop
+              </button>
+              <p class="card-text mt-2">notebook with a pretty cover</p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-around flex-wrap m-auto">
+          <div class="card col-lg-3 col-sm-8 my-5 card1">
+            <img src="img/p4.jpg" alt="" class="card-img-top" />
+            <div class="card-body px-0 py-4">
+              <p class="d-inline font-weight-bold">blue stripes</p>
+              <button
+                class="btn btn-outline-warning float-right mt-n2 px-3 py-1"
+              >
+                Shop
+              </button>
+              <p class="card-text mt-2">notebook with a pretty cover</p>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-sm-8 my-5 card1">
+            <img src="img/p5.jpg" alt="" class="card-img-top" />
+            <div class="card-body px-0 py-4">
+              <p class="d-inline font-weight-bold">colored stripes</p>
+              <button
+                class="btn btn-outline-warning float-right mt-n2 px-3 py-1"
+              >
+                Shop
+              </button>
+              <p class="card-text mt-2">notebook with a pretty cover</p>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-sm-8 my-5 card1">
+            <img src="img/p6.jpg" alt="" class="card-img-top" />
+            <div class="card-body px-0 py-4">
+              <p class="d-inline font-weight-bold">mixed collection</p>
+              <button
+                class="btn btn-outline-warning float-right mt-n2 px-3 py-1"
+              >
+                Shop
+              </button>
+              <p class="card-text mt-2">notebook with a pretty cover</p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-around flex-wrap m-auto">
+          <div class="card col-lg-3 col-sm-8 my-5 card1">
+            <img src="img/p7.jpg" alt="" class="card-img-top" />
+            <div class="card-body px-0 py-4">
+              <p class="d-inline font-weight-bold">blue garden.1</p>
+              <button
+                class="btn btn-outline-warning float-right mt-n2 px-3 py-1"
+              >
+                Shop
+              </button>
+              <p class="card-text mt-2">notebook with a pretty cover</p>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-sm-8 my-5 card1">
+            <img src="img/p8.jpg" alt="" class="card-img-top" />
+            <div class="card-body px-0 py-4">
+              <p class="d-inline font-weight-bold">blue garden.2</p>
+              <button
+                class="btn btn-outline-warning float-right mt-n2 px-3 py-1"
+              >
+                Shop
+              </button>
+              <p class="card-text mt-2">notebook with a pretty cover</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg"></section>
+
+    <section>
+      <div class="jumbotron bg-light shadow my-5 py-3">
+        <h2 class="text-center title">Different Products</h2>
+      </div>
+    </section>
+    <section class="py-5">
+      <div class="container d-flex justify-content-between flex-wrap p-0">
+        <div class="card col-lg-3 col-sm-8 p-0 card2">
+          <img src="img/p9.jpg" alt="" class="img-top" height="100%" />
+          <div
+            class="card-img-overlay d-flex flex-column justify-content-between text-light"
+          >
+            <div>
+              <h3>Paint Colors</h3>
+              <i class="fa-regular fa-clock"></i>
+              <span>2025</span>
+            </div>
+            <div>
+              <img
+                src="img/p.jpg"
+                alt=""
+                class="col-lg-6 col-sm-6 rounded-circle ml-n4"
+              />
+              <h3>big pallete</h3>
+              <p>all colors</p>
+            </div>
+          </div>
+        </div>
+        <div class="card col-lg-3 col-sm-8 p-0 card2">
+          <img src="img/p10.jpg" alt="" class="img-top" height="100%" />
+          <div
+            class="card-img-overlay d-flex flex-column justify-content-between text-light"
+          >
+            <div>
+              <h3>Color Pencils</h3>
+              <i class="fa-regular fa-clock"></i>
+              <span>2025</span>
+            </div>
+            <div>
+              <img
+                src="img/p.jpg"
+                alt=""
+                class="col-lg-6 col-sm-6 rounded-circle ml-n4"
+              />
+              <h3>big pallete</h3>
+              <p>all colors</p>
+            </div>
+          </div>
+        </div>
+        <div class="card col-lg-3 col-sm-8 p-0 card2">
+          <img src="img/p11.jpg" alt="" class="img-top" height="100%" />
+          <div
+            class="card-img-overlay d-flex flex-column justify-content-between text-light"
+          >
+            <div>
+              <h3>Notebooks</h3>
+              <i class="fa-regular fa-clock"></i>
+              <span>2025</span>
+            </div>
+            <div>
+              <img
+                src="img/p.jpg"
+                alt=""
+                class="col-lg-6 col-sm-6 rounded-circle ml-n4"
+              />
+              <h3>big pallete</h3>
+              <p>all colors</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section></section>
+    <section class="py-5">
+      <div class="jumbotron container bg-light shadow my-5 py-3">
+        <h2 class="text-center title">Latest News</h2>
+      </div>
+
+      <div class="container d-flex rounded-lg shadow my-5 card3">
+        <div class="col-lg-8 col-sm-8 card4">
+          <h3 class="title mt-4">New Podcast</h3>
+          <p>August , 2025</p>
+          <div class="line1"></div>
+          <p class="my-4">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Voluptatibus id quia laborum iste quis, ea voluptate atque molestias
+            cupiditate consequatur provident eos rerum possimus incidunt sed
+            magnam facere, veritatis a?
+          </p>
+          <button class="btn btn-warning">
+            <i class="fa-solid fa-microphone"></i>
+            Podcast
+          </button>
+          <button class="btn btn-warning">
+            <i class="fa-regular fa-clock"></i>
+            30 mins
+          </button>
+          <button class="btn btn-warning">
+            <i class="fa-solid fa-play"></i>
+            Play Episode
+          </button>
+        </div>
+        <div class="skr-img col-lg-4 col-sm-8 p-0">
+          <img src="img/n1.jpg" alt="" height="300px" width="100%" />
+        </div>
+      </div>
+      <div class="container d-flex rounded-lg shadow my-5 card3">
+        <div class="skl-img col-lg-4 col-sm-8 p-0">
+          <img src="img/n2.jpg" alt="" height="300px" width="100%" />
+        </div>
+        <div class="col-lg-8 col-sm-8">
+          <h3 class="title mt-4">New Podcast</h3>
+          <p>August , 2025</p>
+          <div class="line1"></div>
+          <p class="my-4">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Voluptatibus id quia laborum iste quis, ea voluptate atque molestias
+            cupiditate consequatur provident eos rerum possimus incidunt sed
+            magnam facere, veritatis a?
+          </p>
+          <button class="btn btn-warning">
+            <i class="fa-solid fa-microphone"></i>
+            Podcast
+          </button>
+          <button class="btn btn-warning">
+            <i class="fa-regular fa-clock"></i>
+            30 mins
+          </button>
+          <button class="btn btn-warning">
+            <i class="fa-solid fa-play"></i>
+            Play Episode
+          </button>
+        </div>
+      </div>
+      <div class="container d-flex rounded-lg shadow my-5 card3">
+        <div class="col-lg-8 col-sm-8">
+          <h3 class="title mt-4">New Podcast</h3>
+          <p>August , 2025</p>
+          <div class="line1"></div>
+          <p class="my-4">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Voluptatibus id quia laborum iste quis, ea voluptate atque molestias
+            cupiditate consequatur provident eos rerum possimus incidunt sed
+            magnam facere, veritatis a?
+          </p>
+          <button class="btn btn-warning">
+            <i class="fa-solid fa-microphone"></i>
+            Podcast
+          </button>
+          <button class="btn btn-warning">
+            <i class="fa-regular fa-clock"></i>
+            30 mins
+          </button>
+          <button class="btn btn-warning">
+            <i class="fa-solid fa-play"></i>
+            Play Episode
+          </button>
+        </div>
+        <div class="skr-img col-lg-4 col-sm-8 p-0">
+          <img src="img/n3.jpg" alt="" height="300px" width="100%" />
+        </div>
+      </div>
+      <div class="container d-flex rounded-lg shadow my-5 card3">
+        <div class="skl-img col-lg-4 col-sm-8 p-0 mr-0">
+          <img src="img/n4.jpg" alt="" height="300px" width="100%" />
+        </div>
+        <div class="col-lg-8 col-sm-8">
+          <h3 class="title mt-4">New Podcast</h3>
+          <p>August , 2025</p>
+          <div class="line1"></div>
+          <p class="my-4">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Voluptatibus id quia laborum iste quis, ea voluptate atque molestias
+            cupiditate consequatur provident eos rerum possimus incidunt sed
+            magnam facere, veritatis a?
+          </p>
+          <button class="btn btn-warning">
+            <i class="fa-solid fa-microphone"></i>
+            Podcast
+          </button>
+          <button class="btn btn-warning">
+            <i class="fa-regular fa-clock"></i>
+            30 mins
+          </button>
+          <button class="btn btn-warning">
+            <i class="fa-solid fa-play"></i>
+            Play Episode
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="container d-flex justify-content-around flex-wrap my-5">
+      <div class="col-lg-2 col-sm-6 text-center shadow rounded-lg my-5 p-3">
+        <h3 class="title">follow us</h3>
+        <i class="fa-brands fa-square-whatsapp d-block display-4 title"></i>
+        <a href="#" class="text-warning">whatsapp</a>
+      </div>
+      <div class="col-lg-2 col-sm-6 text-center shadow rounded-lg my-5 p-3">
+        <h3 class="title">follow us</h3>
+        <i class="fa-brands fa-square-instagram d-block display-4 title"></i>
+        <a href="#" class="text-warning">instagram</a>
+      </div>
+      <div class="col-lg-2 col-sm-6 text-center shadow rounded-lg my-5 p-3">
+        <h3 class="title">follow us</h3>
+        <i class="fa-brands fa-linkedin d-block display-4 title"></i>
+        <a href="#" class="text-warning">linkedin</a>
+      </div>
+      <div class="col-lg-2 col-sm-6 text-center shadow rounded-lg my-5 p-3">
+        <h3 class="title">follow us</h3>
+        <i class="fa-brands fa-square-twitter d-block display-4 title"></i>
+        <a href="#" class="text-warning">twitter</a>
+      </div>
+    </section>
+    <footer class="container-fluid py-4">
+      <div class="line2 my-3"></div>
+
+      <div class="container d-flex justify-content-between">
+        <div class="col-lg-3 text-center bor-b">
+          <div>
+            <img
+              src="img/colored-pencil.png"
+              alt=""
+              class="logo mt-n3"
+              width="40px"
+            />
+            <h2 class="d-inline">Contact</h2>
+          </div>
+          <div class="">
+            <p>Tel: 000-000-000</p>
+            <p>Address: Egypt</p>
+            <p>Fax: 000-000-000</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 text-center bor-b">
+          <div>
+            <img
+              src="img/colored-pencil.png"
+              alt=""
+              class="logo mt-n3"
+              width="40px"
+            />
+            <h2 class="d-inline">Links</h2>
+          </div>
+
+          <div>
+            <a href="#" class="d-block text-warning my-2">Help</a>
+            <a href="#" class="d-block text-warning my-2">About</a>
+            <a href="#" class="d-block text-warning my-2">Q&As</a>
+          </div>
+        </div>
+        <div class="col-lg-4 text-center">
+          <div>
+            <img
+              src="img/colored-pencil.png"
+              alt=""
+              class="logo mt-n3"
+              width="40px"
+            />
+            <h2 class="d-inline">Vision</h2>
+          </div>
+          <div>
+            <p>Services For All</p>
+            <p>Provide Best Service</p>
+            <p>You Will Be Better Than Before</p>
+          </div>
+        </div>
+      </div>
+      <div class="line2 my-3"></div>
+      <p class="text-center">
+        All Rights Preserved &copy; 2025 .Made By
+        <span class="text-warning font-weight-bold">Ruaa Aboelatta</span>
+      </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
